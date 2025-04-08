@@ -27,22 +27,6 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
    <!--main css-->
    <link rel="stylesheet" href="assets/css/main.css">
-
-<script>
-   // Cargar header
-   fetch('header.html')
-     .then(response => response.text())
-     .then(data => {
-       document.getElementById('header').innerHTML = data;
-     });
- 
-   // Cargar footer
-   fetch('footer.html')
-     .then(response => response.text())
-     .then(data => {
-       document.getElementById('footer').innerHTML = data;
-     });
- </script>
 </head>
 
 <body>
@@ -547,6 +531,21 @@
    <script src="assets/js/main.js"></script>
 
 
+<script>
+    // Cargar header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+  
+    // Cargar footer
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
 
 </body>
 
